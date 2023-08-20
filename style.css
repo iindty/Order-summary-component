@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 80vh;
+    border-radius: 15px;
+    z-index: 2;
+    background-color: #ffffff;
+}
+
+.bg {
+    position: absolute;
+    background: url(./assets/images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    left: 0%;
+    top: 0%;
+    background-color: #e0e8ff;
+}
+
+.image-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.detail h1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #1f2f56;
+}
+
+.detail p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #7280a7;
+    margin-top: 15px;
+}
+
+.annual-plan {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #f6f8fb;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.annual-1 {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    width: 80%;
+}
+
+.icon-music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.text-annual-plan {
+    transform: translate(-10px);
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.ap {
+    font-weight: 900;
+    color: #1f2f56;
+}
+
+.price {
+    color: #7280a7;
+}
+
+.change {
+    display: flex;
+    justify-content: right;
+    width: 20%;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.proceed {
+    font-size: 11px;
+    font-weight: 900;
+    padding: 13px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: 0px 10px 10px #cad4f0;
+    border-radius: 10px;
+    background-color: #3829e0;
+    color: #ffffff;
+}
+
+.cancel {
+    font-size: 11px;
+    font-weight: 900;
+    padding: 10px;
+    color: #7280a7;
+}
+
+.change:hover {
+    text-decoration: none;
+    opacity: 70%;
+}
+
+.proceed:hover {
+    opacity: 70%;
+    background-color: #3829e0;
+}
+
+.cancel:hover {
+    color: #1f2f56;
+}
+
+@media only screen and (max-width:426px){
+    .container {
+        width: 87%;
+        height: 80vh;
+    }
+
+    .bg {
+        background: url(./assets/images/pattern-background-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        left: 0%;
+        top: 0%;
+        background-color: #e0e8ff;
+    }
+
+    .paragraph {
+        padding: 35px 25px 30px 25px;
+    }
+
+    .detail h1 {
+        font-size: 22px;
+    }
+    
+    .detail p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .text-annual-plan {
+        font-size: 14px;
+    }
+
+    .proceed {
+        font-size: 15px;
+        padding: 15px 13px;
+    }
+
+    .cancel {
+        font-size: 15px;
+        padding: 15px 13px;
+    }
+
+    .annual-plan {
+        margin-top: 25px;
+    }
+
+}
+
+/* .bg {
+    position: absolute;
+    background: url(./assets/images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    left: 0%;
+    top: 0%;
+} */
+
+
+
+/* <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> */
